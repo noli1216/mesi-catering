@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Authentic Ethiopian food catering service in Texas. Order Injera, Doro Wat, Kitfo, Tibs and more from Mesi Catering.">
     <title>Mesi Catering</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -83,12 +84,24 @@
         We currently accept catering and delivery orders only. Please contact us
         using the form below.
       </p>
+        <p>
+        📞 Call or Text Us: <a href="tel:+13462127111">(346) 212-7111</a>
+      </p>
 
       <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
   <input type="hidden" name="form-name" value="contact" />
 
   <label for="name">Full Name</label>
   <input type="text" id="name" name="name" required />
+        <label for="phone">Phone Number</label>
+<input
+  type="tel"
+  id="phone"
+  name="phone"
+  pattern="[0-9]{10}"
+  placeholder="e.g., 9725551234"
+  required
+/>
 
   <label for="email">Email</label>
   <input type="email" id="email" name="email" required />
